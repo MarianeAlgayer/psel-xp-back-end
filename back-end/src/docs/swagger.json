@@ -19,7 +19,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Share"
+                    "$ref": "#/components/schemas/Ativo"
                   }
                 }
               }
@@ -31,7 +31,7 @@
   },
   "components": {
     "schemas": {
-      "Share": {
+      "Ativo": {
         "type": "object",
         "properties": {
           "id": {
