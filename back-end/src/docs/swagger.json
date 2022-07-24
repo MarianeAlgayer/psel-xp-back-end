@@ -1,0 +1,53 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "API Desafio XP",
+    "description": "API com um endpoint para listagem de ações. Desenvolvida utilizando express e nodejs.",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/ativos": {
+      "get": {
+        "summary": "Lista todos os ativos",
+        "description": "Rota responsável por listar todos os ativos",
+        "tags": ["Ativos"],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Share"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Share": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "code": {
+            "type": "string"
+          },
+          "qtd": {
+            "type": "number"
+          },
+          "value": {
+            "type": "number"
+          }
+        }
+      }
+    }
+  }
+}
