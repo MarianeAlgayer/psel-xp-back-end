@@ -26,7 +26,7 @@ A utilização da API pode ser vista no projeto desenvolvido para o Front-end:
 
 - [Deploy](https://psel-xp-front-end-mariane.vercel.app/)
 
-- [Repositório](https://github.com/MarianeAlgayer/psel-xp-back-end)
+- [Repositório](https://github.com/MarianeAlgayer/psel-xp-front-end)
 
 ## Como baixar e executar o projeto
 
